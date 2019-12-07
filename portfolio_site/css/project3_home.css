@@ -1,0 +1,286 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+  padding-top: 0;
+  font-family: Lexend Deca;
+  font-size: 16px;
+  background: #093C75;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  overflow: hidden;
+}
+
+/* -------------------- Designer/Organizer Buttons and Text -------------------- */
+
+/* ---------- Trapezoid 1 ---------- */
+
+#shapecont {
+ width: 100vw;
+ height: 100vh;
+}
+
+#pgram1 {
+  width: 100vw;
+  height: 100vh;
+  transform: skew(32deg);
+  background: #FF9A00;
+  float: left;
+  position: relative;
+  left: 21.5vw;
+  margin-left: -75vw;
+  text-align: left;
+  z-index: 2;
+  transition: transform 0.3s linear;
+}
+#designertitle {
+  font-size: 3em;
+  position: absolute;
+  bottom: 10vh;
+  right: 35vw;
+  /*left: 100vh;*/
+  transform: skew(-32deg);
+  transition: transform 0.3s linear;
+}
+
+/* Text Color */
+a:link > #pgram1, a:visited > #pgram1 {
+	color: #093C75;
+}
+
+/* Shape when hovered over */
+a:hover #pgram1 {
+  transform: scaleX(1.1) skew(29.5deg);
+  z-index: 3;
+}
+
+/* Shape when clicked on */
+a:focus #pgram1, a:active #pgram1 {
+  transform: scaleX(1.2) skew(28.5deg);
+  z-index: 3;
+}
+
+/* Text color when shape is clicked on */
+a:focus #pgram1, a:active #pgram1 {
+  /*color: #0D5FB9;*/
+  color: #093C75;
+}
+
+/* Text when hovered over */
+a:hover #pgram1 > #designertitle {
+  transform: scaleY(1.1) skew(-32deg);
+}
+
+/* Text when clicked on */
+a:focus #pgram1 > #designertitle, a:active #pgram1 > #designertitle {
+  transform: scaleY(1.2) skew(-32deg) translate(20vh, 0);
+}
+
+/* ---------- Trapezoid 2 ---------- */
+
+#pgram2 {
+  width: 100vw;
+  height: 100vh;
+  transform: skew(32deg);
+  background: #933AD4;
+  float: right;
+  position: relative;
+  right: 21.5vw;
+  margin-right: -75vw;
+  text-align: right;
+  z-index: 2;
+  transition: transform 0.3s linear;
+}
+
+#organizertitle {
+  font-size: 3em;
+  position: absolute;
+  top: 10vh;
+  left: 35vw;
+  transform: skew(-32deg);
+  transition: transform 0.3s linear;
+}
+
+/* Text Color */
+a:link > #pgram2, a:visited > #pgram2 {
+	color: #093C75;
+}
+
+/* Shape when hovered over */
+a:hover #pgram2 {
+  transform: scaleX(1.1) skew(29.5deg);
+  z-index: 3;
+}
+
+/* Shape when clicked on */
+a:focus #pgram2, a:active #pgram2 {
+  transform: scaleX(1.2) skew(28.85deg);
+  z-index: 3;
+}
+
+/* Text color when shape is clicked on */
+a:focus #pgram2, a:active #pgram2 {
+  /*color: #0D5FB9;*/
+  color: #093C75;
+}
+
+/* Text when hovered over */
+a:hover #pgram2 > #organizertitle {
+  transform: scaleY(1.1) skew(-32deg);
+}
+
+/* Text when clicked on */
+a:focus #pgram2 > #organizertitle, a:active #pgram2 > #organizertitle {
+  transform: scaleY(1.2) skew(-32deg) translate(-20vw, 0);
+}
+
+/* ---------- Name Label and Text ---------- */
+
+#pgram3 {
+  width: 20vw;
+  height: 10vh;
+  transform: skew(32deg);
+  background: #FFF800;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -6vh;
+  margin-left: -10vw;
+  text-align: center;
+  z-index: 5;
+  transition: transform 0.25s linear;
+}
+#nametitle {
+  font-size: 2em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -0.65em;
+  margin-left: -3em;
+  transform: skew(-32deg);
+  transition: transform 0.25s linear;
+}
+
+/* Text Color */
+a:link > #pgram3, a:visited > #pgram3 {
+  color: #093C75;
+}
+
+/* Shape when hovered over */
+a:hover #pgram3 {
+  transform: scale(1.2) skew(32deg);
+}
+
+/* Shape when clicked on */
+a:focus #pgram3, a:active #pgram3 {
+  transform: scale(1.4) skew(32deg)
+}
+
+/* Text color when shape is clicked on */
+a:focus #pgram3, a:active #pgram3 {
+  /*color: #0D5FB9;*/
+  color: #093C75;
+}
+
+/* Text when hovered over */
+a:hover #pgram3 > #nametitle {
+  transform: scale(1.1) skew(-32deg);
+}
+
+/* Text when clicked on */
+a:focus #pgram3 > #nametitle, a:active #pgram3 > #nametitle {
+  transform: scale(1.2) skew(-32deg);
+}
+
+/*----------------------------1400 pixel breakpoint----------------------------*/
+
+@media screen and (max-width: 1400px) {
+
+#designertitle {
+  /*font-size: 2em;*/
+}
+
+
+#organizertitle {
+  /*font-size: 2em;*/
+}
+
+#nametitle {
+  font-size: 1.75em;
+}
+
+}
+
+/*----------------------------1125 pixel breakpoint----------------------------*/
+
+@media screen and (max-width: 1125px) {
+
+#designertitle {
+  font-size: 2.75em;
+}
+
+
+#organizertitle {
+  font-size: 2.75em;
+}
+
+#nametitle {
+  font-size: 1.50em;
+}
+
+}
+
+/*----------------------------900 pixel breakpoint----------------------------*/
+
+@media screen and (max-width: 900px) {
+
+#designertitle {
+  font-size: 2.50em;
+}
+
+
+#organizertitle {
+  font-size: 2.50em;
+}
+
+#nametitle {
+  top: 48%;
+  font-size: 1.25em;
+}
+
+}
+
+/*----------------------------700 pixel breakpoint----------------------------*/
+
+@media screen and (max-width: 700px) {
+
+#designertitle {
+  font-size: 2.25em;
+}
+
+
+#organizertitle {
+  font-size: 2.25em;
+}
+
+#nametitle {
+  top: 48%;
+  left: 50%;
+  font-size: 1.15em;
+}
+
+}
+
+/*----------------------------575 pixel breakpoint----------------------------*/
+
+@media screen and (max-width: 575px) {
+
+#nametitle {
+  top: 35%;
+  left: 58%;
+  font-size: 1.15em;
+}
+
+}

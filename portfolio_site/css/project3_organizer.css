@@ -1,0 +1,207 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+  padding-top: 0;
+  font-family: Lexend Deca;
+  font-size: 16px;
+  background: #933AD4;
+  background-size: cover;
+  height: 100vh;
+  max-width: 100vw;
+  margin: 0;
+}
+
+/* just removing text deorations real quick */
+a {
+  text-decoration: none;
+}
+
+/* Container of all text on the page */
+#textcont {
+  height: 100vh;
+  max-width: 100vw;
+  text-align: right;
+}
+
+#pair {
+  z-index: 0;
+}
+
+/* Text of organizer description */
+#organizer_intro {
+  font-size: 1.35em;
+  color: #093C75;
+  text-align: justify;
+  position: fixed;
+  top: 20vh;
+  left: 70vw;
+  width: 20vw;
+  transition: transform 0.53s ease-out;
+  transform: translate(-65vw, 0);
+  z-index: -1;
+}
+
+/* Text of organizer page title */
+#pagetitle {
+  font-size: 3em;
+  color: #093C75;
+  position: fixed;
+  top: 10vh;
+  left: 60vw;
+  transition: transform 0.5s ease-out;
+  transform: translate(-55vw, 0);
+}
+
+/* Text of organizer experience */
+
+#organizer_experience {
+  width: 60vw;
+  right: -50vw;
+  top: 10vh;
+  color: #093C75;
+  text-align: justify;
+  position: absolute;
+  font-size: 1.1em;
+  transition: transform 0.60s ease-out;
+  transform: translate(-58vw, 0);
+  z-index: -2;
+}
+
+#organizer_experience>h4 {
+  text-align: center;
+  font-size: 1.6em;
+}
+
+img {
+  max-width: 60vw;
+}
+
+/* Text of clickable home page link */
+#back {
+	font-size: 1.5em;
+	position: fixed;
+	top: 5vh;
+	left: 5vw;
+	transition: transform 0.07s linear;
+}
+
+/* Text Color */
+a:link #back, a:visited #back {
+  color: #0D5FB9;
+}
+
+/* Title and back button when hovered over*/
+a:hover #back {
+	transform: scale(1.2);
+}
+
+/* Text color when shape clicked on */
+a:focus #back, a:active #back {
+  /*color: #093C75;*/
+  color: #0D5FB9;
+}
+
+/*----------------------------1400 pixel breakpoint----------------------------*/
+
+@media screen and (max-width: 1400px) {
+
+#pagetitle {
+  font-size: 2.75em;
+  left: 58vw;
+}
+
+#organizer_intro {
+  font-size: 1.25em;
+  left: 68vw;
+  top: 18vh;
+}
+
+#back {
+  left: 3vw;
+}
+
+#organizer_experience {
+  right: -52vw;
+}
+
+}
+
+/*----------------------------1100 pixel breakpoint----------------------------*/
+
+@media screen and (max-width: 1100px) {
+
+#pagetitle {
+  font-size: 2.40em;
+  left: 57vw;
+}
+
+#organizer_intro {
+  font-size: 1.25em;
+  left: 67vw;
+  top: 17vh;
+  width: 24vw;
+}
+
+#back {
+  left: 2vw;
+}
+
+#organizer_experience {
+  right: -54vw;
+}
+
+}
+
+/*----------------------------875 pixel breakpoint----------------------------*/
+
+@media screen and (max-width: 875px) {
+
+#pagetitle {
+  font-size: 2em;
+  left: 57vw;
+}
+
+#organizer_intro {
+  font-size: 1.1em;
+  left: 67vw;
+  top: 16vh;
+  width: 26vw;
+}
+
+#back {
+  left: 2vw;
+}
+
+#organizer_experience {
+  right: -56vw;
+}
+
+}
+
+/*----------------------------875 pixel breakpoint----------------------------*/
+
+@media screen and (max-width: 750px) {
+
+#pagetitle {
+  font-size: 1.46em;
+  left: 57vw;
+}
+
+#organizer_intro {
+  font-size: 0.95em;
+  left: 67vw;
+  top: 15vh;
+  width: 30vw;
+}
+
+#back {
+  left: 2vw;
+}
+
+#organizer_experience {
+  right: -55vw;
+  width: 58vw;
+}
+
+}

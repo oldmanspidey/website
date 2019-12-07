@@ -1,0 +1,243 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+  padding-top: 0;
+  font-family: Lexend Deca;
+  font-size: 16px;
+  background: #FF9A00;
+  background-size: cover;
+  height: 100vh;
+  max-width: 100vw;
+  margin: 0;
+}
+
+/* just removing text deorations real quick */
+a {
+  text-decoration: none;
+}
+
+/* Container of all text on the page */
+#textcont {
+  height: 100vh;
+  max-width: 100vw;
+  text-align: right;
+}
+
+#designer_intro {
+  font-size: 1.35em;
+  color: #093C75;
+  text-align: justify;
+  position: fixed;
+  bottom: 20vh;
+  right: 70vw;
+  width: 20vw;
+  transition: transform 0.53s ease-out;
+  transform: translate(65vw, 0);
+}
+
+/* Text of designer page title */
+#pagetitle {
+  font-size: 3em;
+  color: #093C75;
+  position: fixed;
+  bottom: 10vh;
+  right: 60vw;
+  transition: transform 0.5s ease-out;
+  transform: translate(55vw, 0);
+}
+
+#designer_work {
+  max-width: 60vw;
+  top: 10vh;
+  left: -50vw;
+  text-align: justify;
+  position: relative;
+  font-size: 1.1em;
+  transition: transform 0.60s ease-out;
+  transform: translate(58vw, 0);
+}
+
+img {
+  max-height: 20vh;
+}
+
+.example-image {
+  padding-bottom: 15px;
+  padding-left: 15px;
+}
+
+/* Text of clickable home page link */
+#back {
+	font-size: 1.5em;
+	position: fixed;
+	bottom: 5vh;
+	right: 5vw;
+	transition: transform 0.07s linear;
+}
+
+/* Text Color */
+a:link #back, a:visited #back {
+  color: #0D5FB9;
+}
+
+/* Title and back button when hovered over*/
+a:hover #back {
+	transform: scale(1.2);
+}
+
+/* Text color when shape clicked on */
+a:focus #pair, a:active #back {
+  /*color: #093C75;*/
+  color: #0D5FB9;
+}
+
+/*----------------------------1450 pixel breakpoint----------------------------*/
+
+@media screen and (max-width: 1450px) {
+
+img {
+  max-height: 25vh;
+}
+
+#designer_work{
+  max-width: 61vw;
+  left: -53vw;
+
+}
+
+}
+
+/*----------------------------1275 pixel breakpoint----------------------------*/
+
+@media screen and (max-width: 1275px) {
+
+img {
+  max-height: 100vh;
+  max-width: 28vw;
+}
+
+#designer_work {
+  max-width: 62vw;
+  left: -55vw;
+
+}
+
+#designer_intro {
+  right: 68vw;
+  font-size: 1.2em;
+  width: 22vw;
+}
+
+#pagetitle {
+  font-size: 2.75em;
+  right: 58vw;
+}
+
+#back {
+  right: 3vw;
+}
+
+}
+
+/*----------------------------950 pixel breakpoint----------------------------*/
+
+@media screen and (max-width: 950px) {
+
+img {
+  max-height: 100vh;
+  max-width: 28vw;
+}
+
+#designer_work {
+  max-width: 62vw;
+  left: -57vw;
+
+}
+
+#designer_intro {
+  right: 67vw;
+  bottom: 18vh;
+  font-size: 1em;
+  width: 24vw;
+
+}
+
+#pagetitle {
+  font-size: 2.50em;
+  right: 57vw;
+}
+
+#back {
+  right: 2vw;
+}
+
+}
+
+/*----------------------------800 pixel breakpoint----------------------------*/
+
+@media screen and (max-width: 800px) {
+
+img {
+  max-height: 100vh;
+  max-width: 28vw;
+}
+
+#designer_work {
+  max-width: 62vw;
+  left: -57vw;
+
+}
+
+#designer_intro {
+  right: 67vw;
+  bottom: 17vh;
+  font-size: 0.95em;
+  width: 26vw;
+
+}
+
+#pagetitle {
+  font-size: 2em;
+  right: 57vw;
+}
+
+#back {
+  right: 2vw;
+}
+
+}
+
+/*----------------------------800 pixel breakpoint----------------------------*/
+
+@media screen and (max-width: 625px) {
+
+img {
+  max-height: 100vh;
+  max-width: 58vw;
+}
+
+#designer_work {
+  max-width: 62vw;
+  left: -58vw;
+
+}
+
+#designer_intro {
+  right: 67vw;
+  bottom: 17vh;
+  font-size: 0.85em;
+  width: 30vw;
+
+}
+
+#pagetitle {
+  font-size: 1.50em;
+  right: 57vw;
+}
+
+#back {
+  right: 2vw;
+}
+
+}
